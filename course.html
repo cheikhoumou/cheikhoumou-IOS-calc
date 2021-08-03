@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calc</title>
+  <link rel="stylesheet" href="css/cours.css">
+  <link rel="icon" href="img/icon.png">
+</head>
+<body>
+  <br>
+  <div class="calc">
+    <input type="text" disabled id="txt" value="">
+    <input type="text" id="txt2" value="" disabled>
+    <div class="conbox">
+      <div class="box">
+        <button class="co" onclick="window.txt.value = ``;window.txt2.value = ``;">C</button>
+        <button class="co" onclick="">/</button>
+        <button class="co" onclick="nomber(`%`);">%</button>
+        <button class="or" onclick="nomber(`/`);">÷</button>
+      </div>
+      <div class="box">
+        <button id="n7" onclick="nomber(7);">7</button>
+        <button id="n8" onclick="nomber(8);">8</button>
+        <button id="n9" onclick="nomber(9);">9</button>
+        <button class="or" onclick="nomber(`*`);">×</button>
+      </div>
+      <div class="box">
+        <button id="n4" onclick="nomber(4);">4</button>
+        <button id="n5" onclick="nomber(5);">5</button>
+        <button id="n6" onclick="nomber(6);">6</button>
+        <button class="or" onclick="nomber(`-`);">-</button>
+      </div>
+      <div class="box">
+        <button id="n1" onclick="nomber(1);">1</button>
+        <button id="n2" onclick="nomber(2);">2</button>
+        <button id="n3" onclick="nomber(3);">3</button>
+        <button class="or" onclick="nomber(`+`);">+</button>
+      </div>
+      <div class="box">
+        <button class="ziro" id="n0" onclick="nomber(0);">0</button>
+        <button class="" onclick="nomber(`.`);">.</button>
+        <button class="or" onclick="equle();">=</button>
+      </div>
+    </div>
+    <div class="hr"></div>
+    <div class="icon"></div>
+  </div>
+  <br><br>
+  <footer>
+    <h4>
+      <a href="#" id="a1">
+         cheikhoumou </a>
+      Front End Developer
+      <a id="a2" href="#">
+       <img src="https://fibladi.com/news/wp-content/uploads/2020/04/1.png">
+      </a>
+    </h4>
+  </footer>
+  <script src="js/calc.js"></script>
+</body>
+
+</html>
